@@ -316,18 +316,21 @@ body {
 }
 
 .our-latest-product .list {
-  float: left;
   width: 100%;
 }
 .our-latest-product .list ul {
   margin: 0px -12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .our-latest-product .list ul li {
   float: left;
-  width: 25%;
   list-style: none;
   padding: 0px 12px;
   text-align: center;
+  max-width: 25%;
+  min-width: 250px;
 }
 .our-latest-product .list ul li .main {
   float: left;
