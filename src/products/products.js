@@ -3,7 +3,7 @@ import React from 'react'
 const Products = ({ discount, name, retail, offer,img }) => {
     return (
         <>
-            <li>
+            <li key={ name}>
                       <div class="main">
                     <small class="discount">{discount}% OFF</small>
                         <figure>

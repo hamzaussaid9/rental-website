@@ -15,19 +15,21 @@ const Index = () => {
                <div class="list">
                  <ul class="sliderTwo">
                                        { (product === 'Our Latest Products') ?
-                                            latest.map(pro => {
-                                                console.log(pro);
+                                            latest.map((pro,index) => {
+                                                
                                                 return <Products
                                                     {...pro}
+                                                    key={index}
                                                 />
                                             })
                                         
                                         :
                                         
-                                            featured.map(pro => {
-                                                console.log(pro);
+                                            featured.map((pro,index) => {
+                                                
                                                 return <Products
                                                     {...pro}
+                                                    key={index}
                                                 />
                                             })
                                         }
