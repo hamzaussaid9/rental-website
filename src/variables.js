@@ -9,7 +9,7 @@ export const latest = [
         name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
         retail: '655',
         offer: '599',
-        img: img
+        img: img,
     },
     {
         discount: '37',

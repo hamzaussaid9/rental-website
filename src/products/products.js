@@ -1,14 +1,16 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Products = ({ discount, name, retail, offer,img }) => {
     return (
         <>
             <li key={ name}>
                       <div class="main">
                     <small class="discount">{discount}% OFF</small>
-                        <figure>
-                        <a href="#"><img src={img} /></a>
-                         </figure>
+                    <Link to="/">
+                    <figure>
+                        <img src={img} />
+                        </figure>
+                        </Link>
                          <div class="figcaption">
                         <h3>{name}</h3>
                         <span>Retail Price: ${retail}.00</span>

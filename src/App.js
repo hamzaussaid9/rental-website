@@ -5,6 +5,7 @@ import Head from './signUpIN/head';
 import Foot from './signUpIN/foot';
 import SignIn from './signUpIN/signIn';
 import SignUp from './signUpIN/signUp';
+import ProductDetails from './productsDetails';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           <SignUp />
           <Foot />
           </Route>
+          <Route exact path="/ProductDetails">
+            <ProductDetails />
+        </Route>
           </Switch>
       </Router>
       </>
