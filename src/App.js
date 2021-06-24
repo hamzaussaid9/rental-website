@@ -6,6 +6,7 @@ import Foot from './signUpIN/foot';
 import SignIn from './signUpIN/signIn';
 import SignUp from './signUpIN/signUp';
 import ProductDetails from './productsDetails';
+import CheckOut from './checkOut';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
@@ -29,7 +30,12 @@ function App() {
           </Route>
           <Route exact path="/ProductDetails">
             <ProductDetails />
-        </Route>
+          </Route>
+          <Route exact path="/ProductDetails/CheckOut">
+            <Head />
+            <CheckOut />
+            <Footer />
+          </Route>
           </Switch>
       </Router>
       </>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import image from '../image/new-one.jpg';
 const ProductExtra = () => {
     return (
@@ -22,7 +23,7 @@ const ProductExtra = () => {
            <div class="cart-box">
 
              <button>Add to cart</button>
-             <button>Check Out</button>
+                  <Link to="/ProductDetails/CheckOut"><button className="btn-link">Check Out</button></Link>
            </div>
           
 

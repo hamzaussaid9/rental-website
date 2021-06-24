@@ -77,3 +77,61 @@ export const featured = [
         img: img3
     },  
 ];
+export const related = [
+    {
+        discount: '10',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img2
+    },
+    {
+        discount: '30',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img3
+    },
+    {
+        discount: '35',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img2
+    },
+    {
+        discount: '37',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img3
+    },
+    {
+        discount: '30',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img3
+    },
+    {
+        discount: '16',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img2
+    },
+    {
+        discount: '10',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img3
+    },
+    {
+        discount: '30',
+        name: 'SONY PXW-FS5M2 XDCAM S35 CAMERA',
+        retail: '655',
+        offer: '599',
+        img: img2
+    },  
+];

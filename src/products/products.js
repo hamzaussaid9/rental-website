@@ -6,7 +6,7 @@ const Products = ({ discount, name, retail, offer,img }) => {
             <li key={ name}>
                       <div class="main">
                     <small class="discount">{discount}% OFF</small>
-                    <Link to="/">
+                    <Link to="/ProductDetails">
                     <figure>
                         <img src={img} />
                         </figure>
