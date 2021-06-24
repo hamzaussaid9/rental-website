@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../image/logo.png';
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="header-bar">
@@ -11,7 +12,9 @@ const Header = () => {
          </form>
        </div> 
        <div className="logo">
-        <a href="index.html"><img src={ logo} /></a>
+        <Link to= "/">
+              <img src={logo} />
+              </Link>
       </div>
   <div className="nav-bar">
       <div className="list">
@@ -19,8 +22,8 @@ const Header = () => {
           <li><a href="#"><i class="fas fa-bars"></i></a></li>
           <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
          
-         <li><a href="login-form.html">Login</a></li>
-         <li><a href="signup-form.html">sign up</a></li>
+         <li><Link to = "/SignIn">Login</Link></li>
+         <li><Link to = "/SignUp">sign up</Link></li>
           
         </ul>
       </div>
