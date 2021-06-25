@@ -20,10 +20,12 @@ const ProductExtra = () => {
             <div class="search-icon"><input class="location" type="text" placeholder="start date" onfocus="(this.type='date')"  onblur="(this.type='text')"></input><i class="far fa-calendar-minus" id="cancle"></i></div><div class="search-icon"><input class="location" type="text" placeholder="End date" onfocus="(this.type='date')"  onblur="(this.type='text')"></input><i class="far fa-calendar-minus" id="cancle"></i></div>
 
           </form>
-           <div class="cart-box">
-
-             <button>Add to cart</button>
-                  <Link to="/ProductDetails/CheckOut"><button className="btn-link">Check Out</button></Link>
+                <div class="cart-box">
+                  <Link className="aa" to="/ProductDetails">
+                    Add to cart
+                    </Link>
+                  <Link className="aa" to="/ProductDetails/CheckOut">Check Out</Link>     
+                  
            </div>
           
 

@@ -30,6 +30,7 @@ function App() {
           </Route>
           <Route exact path="/ProductDetails">
             <ProductDetails />
+            <Footer />
           </Route>
           <Route exact path="/ProductDetails/CheckOut">
             <Head />
