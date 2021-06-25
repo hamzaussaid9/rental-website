@@ -60,7 +60,7 @@
   }
   .banner form .search-icon{
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
   .banner form .search-icon #cancle{
     left: 90%;
@@ -71,8 +71,15 @@
   .banner form button{
     width: 100%;
     border-radius: 0px;
+    height: 50px;
+  }
+  .banner form input{
+    height: 50px;
   }
   .mainBanner .bottom-arrow{
-    bottom: 5px;
+    bottom: 15px;
+  }
+  .banner form .search-icon i {
+    font-size: 20px;
   }
 }

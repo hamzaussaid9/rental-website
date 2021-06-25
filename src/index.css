@@ -647,7 +647,7 @@ transform: scaley(1);
 }
 
 /*mobile*/
-@media (max-width: 540px) {
+@media (max-width: 767px) {
   .header-bar .ul {
     flex-direction: column;
     justify-content: center;
