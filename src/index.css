@@ -18,7 +18,7 @@ body {
   margin: 0px;
 }
 .container {
-  max-width: 1170px;
+  max-width: 100%;
   margin: 0px auto;
 }
 .mainBanner {
@@ -399,6 +399,7 @@ transform: scaley(1);
   float: left;
   width: 100%;
   padding-top: 25px;
+  padding-left: 5px;
 }
 .our-latest-product .list ul li .main .figcaption h3 {
   float: left;

@@ -51,3 +51,28 @@
   transform: scale(1.9);
   transition: all 0.5s ease;
 }
+@media (max-width: 767px) {
+  .banner form{
+    flex-flow: column;
+  }
+  .banner form input{
+    border-radius: 0px;
+  }
+  .banner form .search-icon{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .banner form .search-icon #cancle{
+    left: 90%;
+  }
+  .banner .members .member-list ul{
+    display: none;
+  }
+  .banner form button{
+    width: 100%;
+    border-radius: 0px;
+  }
+  .mainBanner .bottom-arrow{
+    bottom: 5px;
+  }
+}

@@ -17,6 +17,9 @@ body{
 	max-width: 1170px;
 	margin: 0 auto;
 }*/
+body{
+    overflow-x: hidden;
+}
 .footer {
     float: left;
     width: 100%;
@@ -36,6 +39,7 @@ body{
     margin: 0px -15px;
     border-top: 1px solid #aeadad4f;
     padding-top: 72px;
+    padding-left: 15px;
 }
 
 .get-in-touch {
@@ -230,9 +234,11 @@ body{
     color: #535353;
     font-size: 20px;
     padding: 0px 7px;
+    padding-right: 15px;
 }
 
 .section_two small {
+    padding-left: 15px;
     float: left;
     color: #767676;
     font-family: 'Montserrat', sans-serif;
@@ -244,7 +250,53 @@ body{
 @media (min-width: 768px) and (max-width: 1024px) {}
 
 /*mobile rotation*/
-@media (max-width: 767px) {}
+@media (max-width: 825px) {
+    .footer .section1 {
+        padding-bottom: 20px;
+    }
+    .footer .main{
+        flex-flow: column;
+        padding-left: 15px;
+        text-align: center;
+    }
+    .address ul li a{
+        text-align: left;
+    }
+    .address, .get-in-touch,.support,.services {
+        width: 100%;
+    }
+    
+    .section_two :hover{
+        color: white;
+        transition: 0.5s ease;
+    }
+    .section_two .social_icon {
+        margin-right: 15px;
+    }
+}
 
 /*mobile*/
-@media (max-width: 540px) {}
+@media (max-width: 540px) {
+    .section_two img {
+        display: none;
+    }
+    .section_two .social_icon{
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+    .section_two .social_icon i:hover{
+        color: white;
+        transition: 0.5s ease;
+    }
+    .section_two small{
+        width: 100%;
+        text-align: center;
+        margin-left: -8px;
+    }
+    .section_two {
+        padding: 15px 0px;
+    }
+
+}
