@@ -16,7 +16,6 @@
   margin-bottom: 45px;
   width: 100% !important;
 }
-
 .search form {
   position: relative;
 }
@@ -51,6 +50,10 @@
   transform: scale(1.9);
   transition: all 0.5s ease;
 }
+.show{
+  display: none;
+}
+
 @media (max-width: 767px) {
   .banner form{
     flex-flow: column;
@@ -81,5 +84,11 @@
   }
   .banner form .search-icon i {
     font-size: 20px;
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
   }
 }

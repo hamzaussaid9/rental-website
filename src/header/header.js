@@ -5,11 +5,11 @@ const Header = () => {
     return (
         <div className="header-bar">
   <div className="ul">
-      <div className="search">
+      <div className="search hide">
          <form>
           <input type="search" />
           <i className="fas fa-search"></i>
-         </form>
+          </form>  
        </div> 
        <div className="logo">
         <Link to= "/">
@@ -28,8 +28,8 @@ const Header = () => {
         </ul>
       </div>
      
-</div>
-  </div>
+          </div>
+        </div> 
 </div>
     );
 }
