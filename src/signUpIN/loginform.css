@@ -111,3 +111,13 @@
   color: white;
   font-size: 17px;
 }
+@media (max-width: 540px) {
+  .signup-form form {
+    padding: 0px 20px;
+    margin-bottom: 50px;
+  }
+
+  .signup-form form .input-fields {
+    grid-template-columns: auto;
+  }
+}
