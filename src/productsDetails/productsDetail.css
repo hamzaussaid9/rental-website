@@ -465,9 +465,11 @@ form .search-icon #cancle {
  }
 
  .our-latest-product .list ul li .main .figcaption a i {
-     padding-right: 9px;
+    padding-right: 9px;
  }
-
+input::placeholder{
+    color: darkgray;
+}
 
  /*RESPONSIVE*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -483,7 +485,13 @@ form .search-icon #cancle {
 }
 
 @media (max-width: 767px) {
-
+    .checkout {
+        flex-flow: column !important;
+        margin: 0px !important;
+    }
+    .checkout .main{
+        width: 100% !important;
+    }
     .our-latest-product .list ul li {
         width: 33.333%;
     }
@@ -491,10 +499,47 @@ form .search-icon #cancle {
     .our-latest-product .list ul {
         margin: 0px;
     }
+    .checkout .checkout-info {
+        width: 100% !important;
+    }
 
 }
 @media (max-width: 540px) {
 
+.checkout {
+    flex-direction: column !important;
+    margin: 0px !important;
+}
+.checkout .main{
+    width: 100% !important;
+}
+.checkout .product{
+    border-bottom: none !important;
+}
+input::placeholder{
+    color: white;
+}
+.checkout .product .product-detail {
+    flex-direction: column;
+}
+.checkout .product .product-detail .quantity form label {
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+.checkout .product .product-detail .price label{
+    padding-top: 10px;
+}
+.checkout .product .product-detail figure ,
+.checkout .product .product-detail .quantity ,
+.checkout .product .product-detail .price {
+    border-right: none !important;
+    border-bottom: 2px solid dimgray;
+    width: 100% !important;
+    padding-bottom: 10px;
+}
+.checkout .checkout-info {
+width: 100% !important;
+}
     .product-details-head {
         flex-direction: column;
     }
