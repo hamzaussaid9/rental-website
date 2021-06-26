@@ -2,7 +2,7 @@ import React from 'react';
 import './dashboard.css';
 import SideBar from './sideBar';
 import image from '../image/logo.png';
-const DashHead = () => {
+const DashHead = ({type}) => {
     const [show, setShow] = React.useState(false);
     const handleShow = () => {
         if (!show)
@@ -24,9 +24,8 @@ const DashHead = () => {
       </div>
 
             </div>
-            <section class={`side_bar ${show && 'side_bar-show'}`}>
-                <SideBar handleHide={handleHide} />
-            </section>    
+            
+            <SideBar show={show} type={type} handleHide={handleHide} />
         </>
     )
 }

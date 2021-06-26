@@ -38,8 +38,14 @@ function App() {
             <CheckOut />
             <Footer />
           </Route>
-          <Route exact path="/check">
-            <Dashboard />
+          <Route exact path="/dashboard/admin">
+            <Dashboard type="admin" />
+          </Route>
+          <Route exact path="/dashboard/vender">
+            <Dashboard type="vender" />
+          </Route>
+          <Route exact path="/dashboard/rent">
+            <Dashboard type="renting" />
           </Route>
           </Switch>
       </Router>

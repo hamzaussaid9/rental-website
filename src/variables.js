@@ -1,6 +1,7 @@
 import img from './image/new-one.jpg';
 import img2 from './image/new-two.jpg';
 import img3 from './image/new-three.jpg';
+import img4 from './image/logo.png';
 
 export const products = ['Our Latest Products', 'Featured Products'];
 export const latest = [
@@ -134,4 +135,54 @@ export const related = [
         offer: '599',
         img: img2
     },  
+];
+export const client = [
+    {
+        name: 'Danish akhtr',
+        img: img4
+    },
+     {
+        name: 'Danish akhtr',
+        img: img4
+    },
+      {
+        name: 'Danish akhtr',
+        img: img4
+    },
+     {
+        name: 'Danish akhtr',
+        img: img4
+    },
+      {
+        name: 'Danish akhtr',
+        img: img4
+    },
+       {
+        name: 'Danish akhtr',
+        img: img4
+    },
+        {
+        name: 'Danish akhtr',
+        img: img4
+    },
+         {
+        name: 'Danish akhtr',
+        img: img4
+    },
+          {
+        name: 'Danish akhtr',
+        img: img4
+    },
+           {
+        name: 'Danish akhtr',
+        img: img4
+    },
+            {
+        name: 'Danish akhtr',
+        img: img4
+    },
+             {
+        name: 'Danish akhtr',
+        img: img4
+    },
 ];
