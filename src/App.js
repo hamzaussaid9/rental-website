@@ -2,6 +2,7 @@ import Header from './header';
 import Products from './products'; 
 import Footer from './footer';
 import Head from './signUpIN/head';
+import Dashboard from './dashboard';
 import Foot from './signUpIN/foot';
 import SignIn from './signUpIN/signIn';
 import SignUp from './signUpIN/signUp';
@@ -36,6 +37,9 @@ function App() {
             <Head />
             <CheckOut />
             <Footer />
+          </Route>
+          <Route exact path="/check">
+            <Dashboard />
           </Route>
           </Switch>
       </Router>
