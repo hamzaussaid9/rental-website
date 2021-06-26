@@ -1,14 +1,17 @@
-import React from 'react';
-import './dashboard.css';
-const Vender = () => {
+import React from 'react'
+
+const VenderRent = ({handleClick}) => {
     return (
-      <>
-       <div class="body">
+        <>
+         <div class="body">
       <div class="container">
-       <div class="dashboard_window" id="dashboard_window"> 
-             <div class="dashboard_form">  
-              <strong>All Product:</strong>
-           <div class="list_selecter">            
+       <div class="dashboard_window"> 
+             <div class="dashboard_form"> 
+               <div class="back_to_dashboard"> 
+              <strong>Product Rental History:</strong>
+                    <a className="pointer" onClick={() => {handleClick('main') } }>Back to Dashboard</a>
+              </div>
+             <div class="list_selecter">   
             <select class  ="form-control" name="state" id="maxRows">
 
                          <option value="5000">Show ALL Rows</option>
@@ -20,28 +23,31 @@ const Vender = () => {
                          <option value="70">70</option>
                          <option value="100">100</option>
             </select>
-           </div>
-            <div class="show_product">          
-        <table id="table-id">
+             </div>
+               <div class="show_product">                    
+                 <table id="table-id">
+          
           <tr>
             <th>Product Name</th>
-            <th>View Product</th>
-            <th>Edit Detail</th>
-            <th>Delete Product</th>
-
-
+            <th>Renter Name</th>
+            <th>Vender Name</th>
+            <th>Price</th>
+            <th>Renting Date</th>
+            <th>Renterning Date</th>
           </tr>
-     
-            <tr>
+          <tr>
             <td></td>
-            <td><a><i class="fas fa-eye"></i></a></td>
-            <td><i class='fa fa-edit'></i></td>
-            <td><a><i class="fas fa-trash-alt"></i></a></td>
-          </tr>   
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+             
         </table>
-
         </div>
-            <div class='pagination-container' >
+
+            <div class='pagination-container'>
                 <nav>
             
                   <ul class="pagination">
@@ -58,13 +64,13 @@ const Vender = () => {
                 </nav>
             </div>
 
-              </div>
-              </div>
+</div> 
 
             </div>
-          </div> 
-      </>
+                </div>
+          </div>      
+        </>
     )
 }
 
-export default Vender;
+export default VenderRent;

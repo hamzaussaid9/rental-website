@@ -115,6 +115,103 @@
  .pointer{
      cursor: pointer;
  }
+ .add_product_box .product_container form strong {
+     color: #fff;
+     padding: 15px 0px;
+     font-size: 25px;
+     float: left;
+     width: 100%;
+     text-align: center;
+
+ }
+
+ .add_product_box .product_container form .product_input_field {
+     display: flex;
+     text-align: center;
+     width: 100%;
+ }
+
+ .add_product_box .product_container form input {
+     border: 2px solid #dddbdb;
+     padding: 7px 17px;
+     font-size: 15px;
+     border-radius: 7px;
+     /*margin: 10px 12px;*/
+     margin-bottom: 10px;
+     outline: none;
+     font-weight: bold;
+     width: 100%;
+ }
+
+ .add_product_box .product_container form .product_input_field .inner_field {
+     width: 50%;
+     padding: 0px 20px;
+ }
+
+ .add_product_box .product_container form .product_input_field .inner_field>select {
+     border: 2px solid #dddbdb;
+     padding: 7px 17px;
+     font-size: 15px;
+     border-radius: 7px;
+     /*margin: 10px 12px;*/
+     margin-bottom: 10px;
+     outline: none;
+     font-weight: bold;
+     cursor: pointer;
+     color: gray;
+     width: 100%;
+ }
+
+ .add_product_box .product_container form input[type=file] {
+     color: #fff;
+     padding: 3px 0px;
+     border: none;
+ }
+
+ .add_product_box .product_container form .checkbox {
+     float: left;
+     padding: 7px 17px;
+     margin-bottom: 10px;
+ }
+
+ .add_product_box .product_container form .checkbox label {
+     color: #fff;
+     font-weight: bold;
+
+ }
+
+ .add_product_box .product_container form input[type=checkbox] {
+     width: 15%;
+ }
+
+ .add_product_box .product_container form .submit_button {
+     float: left;
+     width: 100%;
+     padding: 10px 20px;
+ }
+
+ .add_product_box .product_container form button {
+     border: none;
+     padding: 12px 17px;
+     font-size: 19px;
+     border-radius: 7px;
+     outline: none;
+     font-weight: bold;
+     background: #fffdfd;
+     color: gray;
+     cursor: pointer;
+     float: left;
+     width: 100%;
+     transition: 0.5s ease;
+ }
+
+ .add_product_box .product_container form button:hover {
+     color: #ac5b5b;
+     transition: 0.5s ease;
+ }
+ .add_product_box{
+     margin: 30px auto;
+ }
 @media (max-width: 540px){
     .dashboard .side_bar{
         width: 500px;

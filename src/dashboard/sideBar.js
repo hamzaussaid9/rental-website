@@ -4,6 +4,8 @@ import Admin from './admin';
 import Vender from './vender';
 import Rent from './rent';
 import AdminAll from './adminAll';
+import Addnew from './addnew';
+import VenderRent from './venderRent';
 import './dashboard.css';
 const SideBar = ({ show,type, handleHide }) => {
     const [act, setAct] = React.useState({
@@ -81,9 +83,14 @@ const SideBar = ({ show,type, handleHide }) => {
                 act.msg ? <Message /> : ""
             }
             {
-                act.all ? <AdminAll handleClick={ handleClick} /> : ""
+                act.all ? <AdminAll handleClick={handleClick} /> : ""
             }
-
+            {
+                act.add ? <Addnew /> : ""
+            }
+            {
+                act.rent ? <VenderRent handleClick={handleClick} /> : ""
+            }
         </>
     )
 }
