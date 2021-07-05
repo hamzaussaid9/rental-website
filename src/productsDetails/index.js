@@ -4,7 +4,11 @@ import Head from './head'
 import Product from './product';
 import ProductExtra from './productExtra';
 import RelatedWork from './relatedWork';
+
 const Index = () => {
+    React.useEffect(() => {
+    window.scroll(0, 0);
+},[])
     return (
         <>
             <Head />

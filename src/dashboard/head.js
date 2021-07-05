@@ -3,6 +3,7 @@ import './dashboard.css';
 import SideBar from './sideBar';
 import { Link } from 'react-router-dom';
 import image from '../image/logo.png';
+import Change from '../header/change';
 const DashHead = ({type}) => {
     const [show, setShow] = React.useState(false);
     const handleShow = () => {
@@ -15,7 +16,6 @@ const DashHead = ({type}) => {
     return (
         <>
             <div class="dash-header-bar">
-    
      <div class="dash-sidebar-btn">
                     <i class="fas fa-bars" onClick={handleShow}></i>
       </div>

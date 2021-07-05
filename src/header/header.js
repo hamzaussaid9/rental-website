@@ -8,7 +8,7 @@ const Header = () => {
     setToggle(toggle => !toggle);
   }
     return (
-      <div className="header-bar" id="no-scroll">
+      <div className="header-bar">
         {
           toggle ? <Change toggle={toggle} handleClick={handleClick} /> : ''
         }

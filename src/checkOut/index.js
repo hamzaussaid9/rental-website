@@ -2,11 +2,13 @@ import React from 'react';
 import './checkOut.css';
 import image from '../image/new-one.jpg';
 
-const Index = () => {
-    return (
+const Index = () => {  
+  React.useEffect(() => {
+    window.scroll(0, 0);
+  }, [])
+  return (
         <>
             <div class="checkout-body">
-  
        <div class="container">
          <span>Shopping Cart:</span>
          <div class="checkout">

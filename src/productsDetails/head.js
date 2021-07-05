@@ -1,11 +1,21 @@
 import React from 'react';
+import Change from '../header/change';
 import { Link } from 'react-router-dom';
 import logo from '../image/logo.png';
 
 const Head = () => {
-    return (
+  const [toggle, setToggle] = React.useState(false);
+  const handleClick = () => {
+    setToggle(toggle => !toggle);
+  }
+  return (
         <>
-          <div class="product-details-head">
+      <div class="product-details-head">
+        
+          {
+          toggle ? <Change toggle={toggle} handleClick={handleClick} /> : ''
+        }
+
       <div class="product-details-search">
          <form>
           <input type="search" />
@@ -17,7 +27,7 @@ const Head = () => {
       </div>
   <div class="product-details-nav-bar">          
           <a href="#"><i class="fas fa-shopping-cart"></i></a> 
-          <a href="#"><i class="fas fa-bars"></i></a>
+          <a style={{cursor:"pointer"}} onClick={handleClick}><i class="fas fa-bars"></i></a>
   </div>
 </div>   
         </>
