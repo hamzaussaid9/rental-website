@@ -1,6 +1,7 @@
 import React from 'react';
 import './dashboard.css';
 import SideBar from './sideBar';
+import { Link } from 'react-router-dom';
 import image from '../image/logo.png';
 const DashHead = ({type}) => {
     const [show, setShow] = React.useState(false);
@@ -20,7 +21,9 @@ const DashHead = ({type}) => {
       </div>
 
                 <div class="logo">
+                <Link to="/">
                 <img src={image} />
+                </Link>
       </div>
 
             </div>
